@@ -42,7 +42,29 @@ console.log(calcSum(...arr))
 
 const arr2 = [111,242,12,675,45,95,24,72,75]
 console.log(
-    Math.max(...arr)
+    Math.max(...arr2)
 )
 
 
+const assignPrice = (name, ...products) => {
+    let price = 0;
+    products.forEach(item => {
+        price += item.price
+    })
+    return {
+        name,
+        price:price,
+        products:products.map(product =>  product.name),
+    }
+}
+
+console.log(assignPrice(
+    "Łukasz Nowak",
+    {name: 'Karty', price: 20},
+    {name: 'książka', price: 49},
+    )
+)
+
+const obj = {firstName: 'Łukasz'}
+const {firstName, age = '12'} = obj
+console.log(firstName, age)
