@@ -31,3 +31,18 @@ const calcSum = (...nums) => {
 }
 
 console.log(calcSum(1,2,3,4,5))
+
+const arr = [1,2,3];
+
+const calcSum2 = function(a,b,c) {
+    return a + b + c
+}
+
+console.log(calcSum(...arr))
+
+const arr2 = [111,242,12,675,45,95,24,72,75]
+console.log(
+    Math.max(...arr)
+)
+
+
