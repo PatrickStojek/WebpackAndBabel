@@ -85,3 +85,8 @@ const {
 } = place
 
 console.log(`${en} => ${lat} ${lng} `)
+
+///here we inmport the function from the getDate.js file
+const getCurrentDate = require('./getDate.js')
+const data = getCurrentDate();
+console.log( data.getFullYear() );
