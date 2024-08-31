@@ -68,3 +68,20 @@ console.log(assignPrice(
 const obj = {firstName: 'Łukasz'}
 const {firstName, age = '12'} = obj
 console.log(firstName, age)
+
+
+const place = {
+    name: {
+        pl: "Kraków",
+        la: "Cracovia",
+        de: "Krakau"
+    },
+    postition: [50.061389, 19.938333],
+}
+
+const {
+    name: {en = 'Cracow'},
+    postition: [lat = 0, lng = 0]
+} = place
+
+console.log(`${en} => ${lat} ${lng} `)
