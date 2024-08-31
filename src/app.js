@@ -1,3 +1,6 @@
+import getCurrentDate from './getDate.js';
+const date = getCurrentDate()
+console.log(date.getFullYear())
 
 const fn = function(arr, arg1, arg2, arg3,) {
     console.log(
@@ -87,6 +90,16 @@ const {
 console.log(`${en} => ${lat} ${lng} `)
 
 ///here we inmport the function from the getDate.js file
-const getCurrentDate = require('./getDate.js')
-const data = getCurrentDate();
-console.log( data.getFullYear() );
+
+
+//here we import the Point class from Point.js
+const Point = require('./Point.js')
+const p1 = new Point(1,2)
+console.log(p1)
+
+////import calcSum and getMax
+
+const {calculateSum} = require('./Math.js')
+
+const sum = calculateSum(1,2,3,4);
+console.log(sum)
